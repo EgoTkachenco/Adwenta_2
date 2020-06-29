@@ -1,230 +1,228 @@
 @font-face {
-    font-family: "Roboto Mono";
-    src: url("../fonts/RobotoMono-Medium.ttf");
-    font-weight: 500;
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Medium.ttf');
+  font-weight: 500;
 }
 @font-face {
-    font-family: "Roboto Mono";
-    src: url("../fonts/RobotoMono-Regular.ttf");
-    font-weight: 400;
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Regular.ttf');
+  font-weight: 400;
 }
 body {
-    position: relative;
-    color: #27313A;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 18px;
+  position: relative;
+  color: #27313a;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
 }
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 2px !important;
+  width: 5px;
+  height: 2px !important;
 }
-
 
 /* Track */
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
-
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+  background: #888;
 }
-
 
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h2 {
-    letter-spacing: 0.15em;
-    overflow-wrap: break-word;
+  letter-spacing: 0.15em;
+  overflow-wrap: anywhere;
 }
 
 #nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    display: flex;
-    padding: 10px 80px;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 100;
-    transition: 0.5s;
-    background: none;
-    color: #fff;
+  position: fixed;
+  width: 100%;
+  max-width: 100vw;
+  top: 0;
+  display: flex;
+  padding: 10px 80px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+  transition: 0.5s;
+  background: none;
+  color: #fff;
 }
 
 #nav .dropdown-menu {
-    background: #27313A;
-    padding: 0;
+  background: #27313a;
+  padding: 0;
 }
 
 #nav .dropdown-item {
-    font-weight: 550;
-    font-size: 20px;
-    text-align: center;
-    color: #FFFEFF;
+  font-weight: 550;
+  font-size: 20px;
+  text-align: center;
+  color: #fffeff;
 }
 
 #nav .dropdown-item.active {
-    color: #FF847C;
+  color: #ff847c;
 }
 
 #nav .dropdown-item:hover {
-    color: #FF847C;
+  color: #ff847c;
 }
 
 .navbar-collapse.show {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .nav-content {
-    display: flex;
+  display: flex;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #ff847c;
-    font-family: Georgia;
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ff847c;
+  font-family: Georgia;
+  font-weight: bold;
 }
 
 a.logo:hover {
-    color: #ff847c;
+  color: #ff847c;
 }
 
 .nav-phones a {
-    display: block;
-    color: #ff847c;
-    transition: 0.25s;
+  display: block;
+  color: #ff847c;
+  transition: 0.25s;
 }
 
 .nav-phones a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .nav-btn {
-    padding: 10px 25px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #ffffff;
-    transition: color 0.25s;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  transition: color 0.25s;
 }
 
 .nav-btn:hover {
-    color: #ff847c;
+  color: #ff847c;
 }
 
 .nav-btn.active {
-    color: #ff847c;
+  color: #ff847c;
 }
 
 .c-red {
-    color: #ff847c;
+  color: #ff847c;
 }
 
 .navbar-toggler {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
 .navbar-toggler:focus {
-    border: 0;
-    outline: none;
+  border: 0;
+  outline: none;
 }
 
 header {
-    background: url('../assets/header_back.png');
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    min-height: 100vh;
-    display: flex;
+  background: url('../assets/header_back.png');
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
 }
 
 header h1 {
-    font-family: Georgia;
-    font-weight: bold;
-    overflow-wrap: break-word;
+  font-family: Georgia;
+  font-weight: bold;
+  overflow-wrap: anywhere;
 }
 
-header h1>span {
-    font-weight: normal;
+header h1 > span {
+  font-weight: normal;
 }
 
 .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    color: #ffffff;
-    z-index: 10;
-    padding: 80px 20%;
-    text-align: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: #ffffff;
+  z-index: 10;
+  padding: 80px 20%;
+  text-align: center;
+  flex-direction: column;
 }
 
 .header-btn {
-    background: #FF847C;
-    box-shadow: 4px 4px 20px rgba(255, 132, 124, 0.15);
-    padding: 15px 50px;
-    border: none;
-    color: #ffffff;
-    font-weight: bold;
+  background: #ff847c;
+  box-shadow: 4px 4px 20px rgba(255, 132, 124, 0.15);
+  padding: 15px 50px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .header-mask {
-    height: 100%;
-    background: rgba(39, 49, 58, 0.75);
-    width: 100%;
-    position: absolute;
-    top: 0;
+  height: 100%;
+  background: rgba(39, 49, 58, 0.75);
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 #benefits {
-    padding: 50px 20px 80px;
-    position: relative;
+  padding: 50px 20px 80px;
+  position: relative;
 }
 
 #benefits hr {
-    position: absolute;
-    top: 45%;
-    left: 25%;
-    width: 50%;
-    z-index: -1;
-    border: 1px solid rgba(39, 49, 58, 0.2);
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width: 50%;
+  z-index: -1;
+  border: 1px solid rgba(39, 49, 58, 0.2);
 }
 
 .benefits-icon {
-    width: 100px;
-    height: 100px;
-    background: #27313A;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto
+  width: 100px;
+  height: 100px;
+  background: #27313a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 #benefits .animate__animated,
@@ -233,203 +231,208 @@ header h1>span {
 #gates_info .animate__animated,
 #indoor_info .animate__animated,
 #guarantee .animate__animated {
-    opacity: 0;
+  opacity: 0;
 }
 
 #about {
-    background: url('../assets/about_back.png');
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 50px 0 50px;
+  background: url('../assets/about_back.png');
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 50px 0 50px;
 }
 
 #about h2 {
-    color: rgba(255, 254, 255, 0.75);
+  color: rgba(255, 254, 255, 0.75);
 }
 
 .grey-text-block {
-    background: #C4C4C4;
-    padding: 100px 12%;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0.15em;
-    color: #27313A;
+  background: #c4c4c4;
+  padding: 100px 12%;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #27313a;
 }
-
 .red-text-block {
-    background: #FF847C;
-    padding: 100px 12%;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0.15em;
-    color: #FFFEFF;
+  background: #ff847c;
+  padding: 100px 12%;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #fffeff;
 }
 
 .dark-text-block {
-    background: #27313A;
-    padding: 100px 12%;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0.15em;
-    color: #FF847C;
+  background: #27313a;
+  padding: 100px 12%;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #ff847c;
 }
 
 .about-content {
-    font-size: 18px;
-    line-height: 30px;
-    color: #FFFEFF;
-    background: rgba(255, 132, 124, 0.85);
+  font-size: 18px;
+  line-height: 30px;
+  color: #fffeff;
+  background: rgba(255, 132, 124, 0.85);
 }
 
 #guarantee {
-    background: #27313A;
-    letter-spacing: 0.05em;
-    color: #FFFEFF;
+  background: #27313a;
+  letter-spacing: 0.05em;
+  color: #fffeff;
 }
 
 footer {
-    background: #27313A;
-    color: #ffffff;
-    padding: 30px;
+  background: #27313a;
+  color: #ffffff;
+  padding: 30px;
 }
 
 .footer-link {
-    color: #fff;
-    transition: 0.25s;
+  color: #fff;
+  transition: 0.25s;
 }
 
 .footer-link:hover {
-    color: #FF847C;
+  color: #ff847c;
 }
 
 #map {
-    width: 100%;
-    height: 400px;
+  width: 100%;
+  height: 400px;
 }
 
 .bg-black {
-    background: #27313A;
+  background: #27313a;
 }
 
 #bulletproof,
 #rayproof,
 #fireproof {
-    background: #27313A;
-    position: relative;
-    color: #ffffff;
-    padding-top: 120px;
-    padding-bottom: 80px;
+  background: #27313a;
+  position: relative;
+  color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
 
 #grilles {
-    background: url('../assets/grilles_back.png') center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    color: #ffffff;
+  background: url('../assets/grilles_back.png') center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: #ffffff;
 }
 
 #gates .content,
 #grilles .content,
 #indoor .content {
-    padding-top: 120px;
-    padding-bottom: 80px;
-    z-index: 20;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  z-index: 20;
 }
 
 #gates {
-    background: url('../assets/gates_back.png') center; 
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    color: #ffffff;
+  background: url('../assets/gates_back.png') center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: #ffffff;
 }
 #gates_info {
-    background: #27313A;
-    color: #ffffff;
+  background: #27313a;
+  color: #ffffff;
 }
 #fireproof_info {
-    background: url('../assets/fireproof_back.png') center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    color: #ffffff;
+  background: url('../assets/fireproof_back.png') center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: #ffffff;
 }
 
 #indoor {
-    background: url('../assets/indoor_back.png') center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    color: #ffffff;
+  background: url('../assets/indoor_back.png') center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: #ffffff;
 }
 
 #rayproof_info {
-    color: #ffffff;
-    background: #27313A;
+  color: #ffffff;
+  background: #27313a;
 }
 
 .rayproof-card {
-    height: 150px;
-    padding: 50px 10px 30px;
-    position: relative;
+  height: 150px;
+  padding: 50px 10px 30px;
+  position: relative;
 }
 
 .rayproof-card.red {
-    background: rgba(255, 132, 124, 0.25);
+  background: rgba(255, 132, 124, 0.25);
 }
 
 .rayproof-card.grey {
-    background: rgba(255, 254, 255, 0.25);
+  background: rgba(255, 254, 255, 0.25);
 }
 
 .rayproof-card .label {
-    font-weight: bold;
-    font-size: 96px;
-    line-height: 112px;
-    letter-spacing: 0.15em;
-    color: rgb(255, 132, 124, 0.25);
-    position: absolute;
-    left: 30px;
-    top: 0;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 112px;
+  letter-spacing: 0.15em;
+  color: rgb(255, 132, 124, 0.25);
+  position: absolute;
+  left: 30px;
+  top: 0;
 }
 
 @media (max-width: 1200px) {
-    #nav {
-        padding: 10px 20px;
-    }
+  #nav {
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 1060px) {
-    .nav-content {
-        display: none;
-    }
-    .header-content {
-        padding: 80px 10%;
-    }
+  .nav-content {
+    display: none;
+  }
+  .header-content {
+    padding: 80px 10%;
+  }
 }
 
 @media (max-width: 600px) {
-    nav {
-        padding: 10px 20px;
-    }
-    .header-content {
-        padding: 80px 0 40px;
-    }
-    h1 {
-        font-size: 30px;
-    }
-    #gates .content,
-    #grilles .content,
-    #indoor .content {
-        padding-top: 80px;
-    }
-    #bulletproof,
-    #rayproof,
-    #fireproof {
-        padding-top: 80px;
-    }
+  nav {
+    padding: 10px 20px;
+  }
+  .header-content {
+    padding: 80px 0 40px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  #gates .content,
+  #grilles .content,
+  #indoor .content {
+    padding-top: 80px;
+  }
+  #bulletproof,
+  #rayproof,
+  #fireproof {
+    padding-top: 80px;
+  }
+  .dark-text-block, .grey-text-block, .red-text-block {
+    padding: 20px;
+  }
+  footer {
+    padding: 15px;
+  }
 }
