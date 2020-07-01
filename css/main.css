@@ -75,8 +75,8 @@ h2 {
 }
 
 #nav .dropdown-item {
-  font-weight: 550;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   text-align: center;
   color: #fffeff;
 }
@@ -152,7 +152,7 @@ a.logo:hover {
 }
 
 header {
-  background: url('../assets/header_back.png');
+  background: url('../assets/header_back.png') center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -245,30 +245,33 @@ header h1 > span {
 
 .grey-text-block {
   background: #c4c4c4;
-  padding: 100px 12%;
+  padding: 80px 12%;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
+  font-family: 'Raleway', sans-serif;
   color: #27313a;
 }
 .red-text-block {
   background: #ff847c;
-  padding: 100px 12%;
+  padding: 80px 12%;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
+  font-family: 'Raleway', sans-serif;
   color: #fffeff;
 }
 
 .dark-text-block {
   background: #27313a;
-  padding: 100px 12%;
+  padding: 80px 12%;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
+  font-family: 'Raleway', sans-serif;
   color: #ff847c;
 }
 
